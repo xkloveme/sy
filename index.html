@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<!--响应式布局网页设计的关键-->
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!--SEO优化   兼容性-->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="renderer" content="webkit" />
+		<!-- webkit ie-comp ie-stand-->
+		<meta name="author" content="hpe" />
+		<meta name="keywords" content="bootstrap,html5,css3,蓝瘦,香菇" />
+		<!--尽可能符合网络搜索的热门词汇-->
+		<meta name="description" content="bootstrap基本模板" />
+
+		<title>主页</title>
+
+		<!--先引入Bootstrap的css文件，后引入自定义css文件-->
+		<link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="css/animate.css" />
+		<link rel="stylesheet" href="css/style.css" />
+
+		<!--[if lt IE 9]>
+		 <script src="scripts/html5.min.js"></script>
+		 <script src="scripts/respond.min.js"></script>
+			
+		<![endif]-->
+
+	</head>
+
+	<body>
+		<header>
+
+			<nav class="navbar navbar-default navbar-fixed-top">
+				<div class="container">
+
+					<div class="navbar-header">
+						<a href="" class="navbar-brand" style="color: #4CAE4C;font-weight: 900;font-size: 30px;font-family: 黑体;"><b>实训官网</b></a>
+						<button class="navbar-toggle navbar" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="icon-bar" ></span>
+						<span class="icon-bar" ></span>
+						<span class="icon-bar" ></span>
+					</button>
+					</div>
+					<div class="navbar-collapse collapse ">
+						<ul class="nav navbar-nav navbar-right">
+							<li>
+								<a href="#home"><b>首页</b></a>
+							</li>
+							<li>
+								<a href="#bbs"><b>论坛</b></a>
+							</li>
+							<li>
+								<a href="#html5"><b>前端开发</b></a>
+							</li>
+							<li>
+								<a href="#course"><b>基础课程</b></a>
+							</li>
+							<li>
+								<a href="#APP"><b>移动APP</b></a>
+							</li>
+							<li>
+								<a href="#TouchMe"><b>联系我们</b></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+			</nav>
+		</header>
+		<section id="home">
+			<div class="lvjing ">
+				<h1 class="wow fadeInLeft">bootstrap实战课程等你来战！</h1>
+				<p class="wow fadeInRight">
+					本套课程适用于：1.WEB开发人员；2.网站维护人员、管理人员<br> 培训技能的目标：使用bootstrap框架快速构建响应式网页，颠覆传统WEB前端！
+				</p>
+				<div class="container wow fadeInUp">
+					<div data-ride="carousel" data-interval="2000" id="myCarousel" class="carousel slide">
+						<div id="myCarousel" class="carousel slide">
+							<!--轮播的指标-->
+							<ol class="carousel-indicators">
+								<li class="active" data-target="#myCarousel" data-slide-to="0"></li>
+								<li data-target="#myCarousel" data-slide-to="1"></li>
+								<li data-target="#myCarousel" data-slide-to="2"></li>
+								<li data-target="#myCarousel" data-slide-to="3"></li>
+							</ol>
+
+							<!--轮播的内容-->
+							<div class="carousel-inner">
+								<div class="item active">
+									<img src="img/img1.jpg" alt="" />
+								</div>
+								<div class="item">
+									<img src="img/img2.jpg" alt="">
+								</div>
+								<div class="item">
+									<img src="img/img3.jpg" alt="" />
+								</div>
+								<div class="item">
+									<img src="img/img4.jpg" alt="" />
+								</div>
+							</div>
+							<!--轮播的导航-->
+							<a href="#myCarousel" class="left carousel-control" data-slide="prev">
+								<span class="glyphicon glyphicon-chevron-left"></span>
+								<!--<span>向前一张</span>-->
+							</a>
+							<a href="#myCarousel" class="right carousel-control" data-slide="next">
+								<!--向后一张-->
+								<span class="glyphicon glyphicon-chevron-right"></span>
+							</a>
+						</div>
+					</div>
+				</div>
+		</section>
+		<section class="container " id="bbs">
+			<div class="col-md-4 wow rubberBand">
+
+				<img src="img/a.png" class="img-responsive center-block" />
+				<h2 class="text-center"><b>Android开发</b></h2>
+				<p class="text-center">Android开发技术交流、问题求助、实战案例分享</p>
+
+			</div>
+			<div class="col-md-4 wow rubberBand">
+
+				<img src="img/i.png" class="img-responsive center-block" />
+				<h2 class="text-center"><b>IOS开发</b></h2>
+				<p class="text-center">ios开发技术交流、海量实战干货分享</p>
+
+			</div>
+			<div class="col-md-4 wow rubberBand">
+
+				<img src="img/b.png" class="img-responsive center-block" />
+				<h2 class="text-center"><b>嵌入式底层开发</b></h2>
+				<p class="text-center">底层嵌入式开发、实战案例等技术交流讨论</p>
+
+			</div>
+		</section>
+		<section id="html5">
+			<div class="container">
+				<div class="col-md-6 ">
+					<a href="#">
+						<img src="img/html5.jpg" class="img-responsive center-block" />
+					</a>
+				</div>
+				<div class="col-md-6 wow wobble">
+					<h2>HTML5前端开发</h2>
+					<p>一线资深前端开发工程师倾情打造！祝你完成普通程序员到优秀工程师的华丽升级！</p>
+					<div>
+						<span class="glyphicon glyphicon-flash myicon"></span> 使用HTML5与CSS3技术经验轻松实现设备自适应展示。
+					</div>
+					<div>
+						<span class="glyphicon glyphicon-flash myicon"></span> 清晰明了的语义代码结构，更高的可读性、更利于页面维护的。
+					</div>
+				</div>
+
+			</div>
+		</section>
+		<section id="bootstrap">
+			<div class="container">
+				<div class="col-md-6  wow wobble">
+					<h2>bootstrap实战视频课程</h2>
+					<p>BootStrap是最受欢迎的HTML、CSS和JS框架用于开发响应式布局、移动设备优先的WEB项目。</p>
+					<div>
+						<span class="glyphicon glyphicon-eye-open myicon"></span> 你的网站和应用能在BootStrap的帮助下同一份代码快速、有效适配手机、平板、PC设备。
+					</div>
+					<div>
+						<span class="glyphicon glyphicon-eye-open myicon"></span> Bootstrap提供了全面、美观的文档，你能在这里找到关于HTMl元素。HTML和CSS组件、JQuery插件方面的所有详细文档。
+					</div>
+				</div>
+				<div class="col-md-6">
+					<a href="#">
+						<img src="img/Bootstrap.jpg" class="img-responsive center-block" />
+					</a>
+				</div>
+			</div>
+		</section>
+		<section id="course">
+			<h2>最新课程</h2>
+			<div class="container wow bounceIn">
+
+				<div class="col-md-3 col-sm-6">
+					<img src="img/swift.jpg" class="img-responsive center-block" />
+					<a href="" class="btn btn-default" target="_blank" role="button">加入学习</a>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<img src="img/swift.jpg" class="img-responsive center-block" />
+					<a href="" class="btn btn-default" target="_blank" role="button">加入学习</a>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<img src="img/swift.jpg" class="img-responsive center-block" />
+					<a href="" class="btn btn-default" target="_blank" role="button">加入学习</a>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<img src="img/swift.jpg" class="img-responsive center-block" />
+					<a href="" class="btn btn-default" target="_blank" role="button">加入学习</a>
+				</div>
+			</div>
+			<div class="container wow bounceIn">
+
+				<div class="col-md-3 col-sm-6">
+					<img src="img/swift.jpg" class="img-responsive center-block" />
+					<a href="" class="btn btn-default" target="_blank" role="button">加入学习</a>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<img src="img/swift.jpg" class="img-responsive center-block" />
+					<a href="" class="btn btn-default" target="_blank" role="button">加入学习</a>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<img src="img/swift.jpg" class="img-responsive center-block" />
+					<a href="" class="btn btn-default" target="_blank" role="button">加入学习</a>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<img src="img/swift.jpg" class="img-responsive center-block" />
+					<a href="" class="btn btn-default" target="_blank" role="button">加入学习</a>
+				</div>
+			</div>
+		</section>
+		<section id="APP">
+			<div class="container ">
+				<div class="col-md-6 wow fadeInLeft">
+					<h2>网站移动APP下载</h2>
+					<p>全新UI交互，与新网站数据同步，更加丰富的课程，开启精彩无限，语音搜索课程，喊出你想要的课程，一键收藏，方便自己重复学习，离线课程下载，在哪都能看！</p>
+					<a href="" class="btn btn-default" target="_blank" role="button">
+						<span class="glyphicon glyphicon-download "></span>&nbsp;iphone版
+					</a>
+					<a href="" class="btn btn-default" target="_blank" role="button">
+						<span class="glyphicon glyphicon-download "></span>&nbsp;Android版
+					</a>
+				</div>
+				<div class="col-md-6 wow fadeInRight">
+					<img src="img/app-banner.jpg" class="img-responsive center-block" />
+				</div>
+			</div>
+		</section>
+		<section id="TouchMe">
+			<div class=" lvjing">
+				<div class="container wow bounceInUp">
+					<div class="col-md-6">
+						<h2><span class=" glyphicon glyphicon-send"></span>   联系我们</h2>
+						<p>优秀的教学效果和行业领先的经营模式赢得了社会各界的广泛赞誉和好评，荣获了各界权威机构的颁奖：达内成为业界唯一的一家2006、2007、2008、2009连续4年入选德勤评选的 “中国高科技高成长50强公司”、“亚太地区高科技高成长500强公司”，获得首届中国留学人才归国创业“腾飞”奖、中关村管理委员会指定的“软件人才培养示范基地”、被《计算机世界》评选的“就业服务杰出贡献奖”、被《中国计算机报》评选的“最具影响力培训机构奖”、被搜狐评为“中国十大教育集团”、被腾讯评为“中国大学生心目中最具影响力的IT品牌”。</p>
+						<div><span class="glyphicon glyphicon-home"></span>&nbsp;地址：河南省郑州市</div>
+						<div><span class="glyphicon glyphicon-phone-alt"></span>&nbsp;联系电话：0379-86567913</div>
+						<div><span class="glyphicon glyphicon-envelope"></span>&nbsp;邮箱：hr@163.com</div>
+					</div>
+					<form action="">
+						<div class="col-md-6">
+							<div class="col-md-6">
+								<input type="text" id="name" placeholder="  您的姓名" />
+							</div>
+							<div class="col-md-6">
+								<input type="text" id="email" placeholder="  您的邮箱" />
+							</div>
+							<div class="text col-md-12">
+								<input type="text" class="form-control" placeholder="标题" />
+							</div>
+							<div class="text col-md-12">
+								<textarea name="" rows="5" placeholder="留言内容" class="form-control"></textarea>
+							</div>
+							<div class="col-md-8">
+								<input type="submit" class="btn" class="form-control" />
+							</div>
+
+					</form>
+					</div>
+				</div>
+		</section>
+		<footer class="nav navbar-fixed-bottom text-center">
+			&copy;2016
+		</footer>
+
+		<!--先引入jQuery的js文件，后引入Bootstrap的js文件-->
+		<script src="scripts/jquery.min.js"></script>
+		<script src="bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="scripts/jquery.singlePageNav.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="scripts/wow.min.js" type="text/javascript" charset="utf-8"></script>
+		<!--<script>
+    $(function(){
+        /*导航跳转效果插件*/
+        $('.nav').singlePageNav({
+            offset:70
+        });
+        /*小屏幕导航点击关闭菜单*/
+        $('.navbar-collapse a').click(function(){
+            $('.navbar-collapse').collapse('hide');
+        });
+        new WOW().init();
+    })
+</script>-->
+	</body>
+	<script type="text/javascript">
+		$(function() {
+			/*导航跳转效果插件*/
+//			$('.nav').singlePageNav({
+//				offset: 70
+//			});
+			/*小屏幕导航点击关闭菜单*/
+			$('.navbar-collapse a').click(function() {
+				$('.navbar-collapse').collapse('hide');
+			});
+			new WOW().init();
+		})
+	</script>
+
+</html>
