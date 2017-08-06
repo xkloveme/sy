@@ -17,7 +17,8 @@
 		<meta name="description" content="bootstrap基本模板" />
 
 		<title>主页</title>
-
+        <script src="https://cdn.bootcss.com/vue/2.2.2/vue.js"></script>
+		<script src="https://cdn.bootcss.com/vue-resource/1.3.4/vue-resource.js"></script>
 		<!--先引入Bootstrap的css文件，后引入自定义css文件-->
 		<link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css" />
 		<link rel="stylesheet" type="text/css" href="css/animate.css" />
@@ -45,25 +46,10 @@
 						<span class="icon-bar" ></span>
 					</button>
 					</div>
-					<div class="navbar-collapse collapse ">
-						<ul class="nav navbar-nav navbar-right">
-							<li>
-								<a href="#home"><b>首页</b></a>
-							</li>
-							<li>
-								<a href="#bbs"><b>论坛</b></a>
-							</li>
-							<li>
-								<a href="#html5"><b>前端开发</b></a>
-							</li>
-							<li>
-								<a href="#course"><b>基础课程</b></a>
-							</li>
-							<li>
-								<a href="#APP"><b>移动APP</b></a>
-							</li>
-							<li>
-								<a href="#TouchMe"><b>联系我们</b></a>
+					<div class="navbar-collapse collapse " >
+						<ul class="nav navbar-nav navbar-right" id="Navigation">
+							<li v-for="item in items">
+								<a v-bind:href="item.name">{{item.value}}</a>
 							</li>
 						</ul>
 					</div>
@@ -304,5 +290,37 @@
 			new WOW().init();
 		})
 	</script>
-
+<script type="text/javascript">
+			new Vue({
+				el: "#Navigation",
+				data: {
+					//声明空数组，进行数据接收，最后渲染到前端页面
+					items: [],
+				},
+				//向data里添加数据
+				mounted: function() {
+					this.getData();
+				},
+				methods: {
+					getData: function() {
+						var self = this;
+						$.ajax({
+							url: "db.json",
+							dataType: "json",
+							success: function(json) {
+								console.log(json)
+								for(var i = 0, len = json.items.length; i < len; i++) {
+									//已经获取json数组中的数据，接下来如何渲染到前端页面中
+									//获取全部数据
+									var selDataitems = json.items[i];
+									console.log(selDataitems);
+									//将获取的数据push到空的数组中items，
+									self.items.push(selDataitems);
+								}
+							}
+						})
+					}
+					}
+			});
+		</script>
 </html>
